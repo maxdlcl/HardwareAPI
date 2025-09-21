@@ -26,7 +26,7 @@ API_HOST   = "https://api2.arduino.cc"
 TOKEN_URL  = f"{API_HOST}/iot/v1/clients/token"
 AUDIENCE   = f"{API_HOST}/iot"
 
-# Sensores esperados (nombres de propiedades en tu Thing)
+# Sensores esperados
 SENSOR_KEYS = ["temp", "hum", "air_q", "light"]
 
 # Buffer de datos en memoria
