@@ -26,7 +26,7 @@ API_HOST   = "https://api2.arduino.cc"
 TOKEN_URL  = f"{API_HOST}/iot/v1/clients/token"
 AUDIENCE   = f"{API_HOST}/iot"
 
-# Sensores esperados
+# Sensores esperados (nombres de propiedades en el Thing)
 SENSOR_KEYS = ["temp", "hum", "air_q", "light"]
 
 # Buffer de datos en memoria
@@ -308,7 +308,7 @@ def _on_stop():
     global _stop_flag
     _stop_flag = True
 
-# ============ ENDPOINTS ============
+# ENDPOINTS
 
 @app.get("/health")
 def health():
